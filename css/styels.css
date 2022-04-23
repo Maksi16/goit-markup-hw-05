@@ -563,9 +563,8 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
-  transform: scale(0.3);
-  opacity: 0;
+.backdrop.is-hidden .modal {
+  transform: scale(1.5);
 }
 
 .modal {
@@ -573,6 +572,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+
   width: 528px;
   height: 581px;
   background: #ffffff;
@@ -580,7 +580,7 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btm {
   position: absolute;
@@ -595,8 +595,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-
-  transition: ;
 }
 .is-hidden {
   opacity: 0;
